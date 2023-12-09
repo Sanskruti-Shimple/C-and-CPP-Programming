@@ -1,22 +1,20 @@
 #include<iostream>
-#include<vector>
-#include<algorithm>
 using namespace std;
 
 int main(){
+	cout << "Sanskruti Shimple";
 	
-	vector<int>vect;
-	int num;
+	// Step 1
+	int arr[] = {4, 19, 30, 1, 34, 8 };
+	//Swap elements at index 0 and 3
+	sizeof n = sizeof(arr)/sizeof(i);
 	
-	for(int i=0; i<5; i++){
-		cin>>num; //input
-		vect.push_back(num);		
-	}
+	int current_min = arr[0];
 	
-	sort(vect.begin(), vect.end());
-	
-	for(int i=0; i<5; i++){
-		cout << vect[i] << " , ";
+	for(int i = 0; i < n; i++){
+		if(arr[i] < current_min){
+			current_min = arr[i];  //Update current minimum
+		}
 	}
 	return 0;
 }
